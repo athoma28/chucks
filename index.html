@@ -10,8 +10,18 @@
   <div class="container">
     <header>
       <h1><a href="index.html">The Chucks Life</a></h1>
-      <div id="sort-controls"></div>
       <div id="random-button"></div>
+      <div class="controls-row">
+        <div id="sort-controls"></div>
+        <div class="search-wrapper">
+          <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search comics...">
+            <button class="search-mode-btn active" data-mode="topic">Topic</button>
+            <button class="search-mode-btn" data-mode="dialogue">Dialogue</button>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      </div>
     </header>
     <main>
       <div id="comics-grid" class="grid">
